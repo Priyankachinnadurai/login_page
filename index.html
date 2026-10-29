@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="company-section">
+            <h1>WELCOME TO SA GROUPZ</h1>
+            <p>Headquartered in Chennai, SA Groupz is the leading manufacturer and Solution provider of Sensing &
+                Automation Products with Sales offices across India and Handling International Clients.</p>
+
+
+        </div>
+        <div class="login-section">
+            <div id="login-box">
+                <h1>Welcome Back!</h1>
+                <p>Sign in to your account</p>
+                <form id="loginform">
+                    <label for="email">Email_ID</label>
+                    <input type="email" id="email" placeholder="Enter your email" >
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" >
+                    <button type="submit" id="login">login</button>
+                    <p id="message"></p>
+                    <button type="button" id="signup">signup/register</button>
+                </form>
+            </div>
+            
+            <div class="registration-box" style="display: none;">
+                <h1>Create Your Account</h1>
+                <p>Register Your New Account</p>
+                <form id="registration-form">
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" placeholder="Enter your name" required>
+                    <label for="phone">Phone_no</label>
+                    <input type="tel" id="phone" placeholder="Enter your 10 digit phone_no"  minlength="10" maxlength="10" pattern="[0-9]{10}"  inputmode="numeric" required maxlength=8>
+                    <label for="reg-email">Email_ID</label>
+                    <input type="email" id="reg_email" placeholder="Enter your email" required>
+                    <label for="reg-password">password</label>
+                    <input type="password" id="reg-password" placeholder="Enter your password" required>
+                    <label for="confirm_password">confirm_password</label>
+                    <input type="password" id="confirm_password" placeholder="Reenter your password" required>
+                    <button type="submit" id="register">Register</button>
+                    <p id="r-message"></p>
+                    <button type="button" id="back-to-login">Back to Login</button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
